@@ -1,7 +1,6 @@
 import axios from 'axios'
 
 const getTopTracks = async (time_range) => {
-  const url = `http://localhost:3000/api/query/top-tracks/${time_range}`
   const jwt = localStorage.getItem('jwt')
 
   if(!jwt) {
@@ -15,7 +14,7 @@ const getTopTracks = async (time_range) => {
   }
 
   try {
-    const response = await axios.get(url, config)
+    const response = await axios.get(`/api/query/top-tracks/${time_range}`, config)
     console.log(response)
     return response.data
   }

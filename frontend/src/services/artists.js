@@ -1,9 +1,8 @@
 import axios from 'axios'
 
 const getTopArtists = async (time_range) => {
-  const url = `http://localhost:3000/api/query/top-artists/${time_range}`
   const jwt = localStorage.getItem('jwt')
-  console.log("Here")
+  
   if(!jwt) {
     throw new Error('JWT not found in local storage')
   }
@@ -15,7 +14,7 @@ const getTopArtists = async (time_range) => {
   }
 
   try {
-    const response = await axios.get(url, config)
+    const response = await axios.get(`/api/query/top-artists/${time_range}`, config)
     console.log(response)
     return response.data
   }

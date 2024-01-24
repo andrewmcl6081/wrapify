@@ -25,7 +25,7 @@ const Home = () => {
           Discover your listening habits
         </Typography>
         <Button
-          href='http://localhost:3000/api/auth/login'
+          href='/api/auth/login'
           variant="contained"
           color="primary"
           sx={{
