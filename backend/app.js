@@ -1,5 +1,4 @@
 const express = require('express')
-const session = require('express-session')
 const morgan = require('morgan')
 const cors = require('cors')
 const authRouter = require('./controllers/controller.auth')
@@ -14,6 +13,8 @@ const corsOptions = {
 
 app.use(cors(corsOptions))
 app.use(express.static(path.join(__dirname, 'dist')))
+
+// Logging middleware
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))
 
 app.use('/api/auth', authRouter)

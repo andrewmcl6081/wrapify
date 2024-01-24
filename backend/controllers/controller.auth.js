@@ -49,7 +49,7 @@ authRouter.get('/callback', async (req, res) => {
 
     const jwtToken = jwt.sign({ accessToken: accessToken }, JWT_SECRET, { expiresIn: '1h'})
 
-    res.redirect(`http://localhost:5173/analytics/top-tracks?token=${jwtToken}`)
+    res.redirect(`/analytics/top-tracks?token=${jwtToken}`)
   }
   catch (error) {
     return res.status(403).json({
