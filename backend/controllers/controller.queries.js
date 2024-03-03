@@ -78,7 +78,7 @@ queryRouter.get('/top-artists/:timeRange', async (req, res) => {
       return res.json(utils.filterArtists(data.items))
     }
     else {
-      return res.status(400).json({ error: 'Bad Request', message: 'Failed to fetch top aretists from Spotify.' })
+      return res.status(400).json({ error: 'Bad Request', message: 'Failed to fetch top artists from Spotify.' })
     }
   }
   catch (e) {
