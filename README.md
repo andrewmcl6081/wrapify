@@ -1,14 +1,8 @@
-# Wrapify - Spotify Analytics Tool
+# Wrapify
 
-A web platform designed to provide users with insights into their Spotify listening habits, mimicking the functionality of Spotify Wrapped. Built with Python, Flask, JavaScript, React, Vite, and Bootstrap.
+Introducing Wrapify, an innovative web application designed to bring Spotify's beloved yearly Wrapped feature to life throughout the entire year. Wrapify goes beyond the annual recap, offering Spotify users a dynamic and interactive way to explore their music listening habits with rich insights and analytics available anytime.
 
-## Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
+![Wrapify Overview](./images/wrapify_overview.PNG "Wrapify Overview")
 
 ## Features
 
